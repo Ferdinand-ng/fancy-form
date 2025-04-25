@@ -57,7 +57,7 @@ body{
     box-shadow: 1px 1px 2px black;
     border-radius: 10px;
     padding: 10px 10px;
-    color: black;
+    color: #123458;
 }
 .signup{
     opacity: 0;
@@ -83,20 +83,26 @@ input{
     border-left: none;
     border-right: none;
     height: 20px;
-    color: black;
+    color: #123458;
     outline: none;
 }
 input::placeholder{
-    color: black;
+    color: #123458;
 }
 button{
     background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.648);
+    border: 2px solid #123458;
     padding: 10px 20px;
     cursor: pointer;
     width: 50%;
     place-self: center;
     transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    font-family: calibri;
+}
+button:hover{
+    background: #123458;
+    color: white;
 }
 .footer{
     display: flex;
@@ -110,10 +116,8 @@ button{
     border-bottom: 3px solid white;
 }
 a{
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s ease-in-out;
-    font-family: "calibri";
+    text-decoration: underline;
+    color: #123458;
 }
 .inps{
     display: flex;
@@ -126,14 +130,23 @@ a{
     width: 100%;
 }
 @media screen and (max-width: 1010px) {
+    body{
+        display:grid;
+        place-items: center;
+        height: 100vh;
+       }
     .container{
         width: 70%;
-        height: auto;
+        height: 100vh;
+        border: 1px solid red;
+        display: grid;
+        place-items: center;
     }
     .cont-main{
         flex-direction: column;
         height: fit-content;
         gap: 0;
+        
     }
     .moving-card{
         width: 100%;
@@ -146,7 +159,7 @@ a{
     }
     .signin, .signup{
         width: 100%;
-        height: 10%;
+        height: 100%;
         box-shadow: none;
         gap: 0;
         padding: 10px 10px;
@@ -162,8 +175,21 @@ a{
         display: grid;
         place-items: center;
         padding: 1px;
+        border-radius: 20px;
+        border: 2px solid #123458;
+        text-transform: uppercase;
+        font-family: "calibri";
+        width: 40%;
     }
     .inps{
         gap: 0;
     }
+
+input{
+    height: 30px;
+}
+.signin{
+    height: 100%;
+    margin-bottom: 10%;
+}
   }
