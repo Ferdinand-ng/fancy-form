@@ -138,7 +138,6 @@ a{
     .container{
         width: 70%;
         height: 100vh;
-        border: 1px solid red;
         display: grid;
         place-items: center;
     }
